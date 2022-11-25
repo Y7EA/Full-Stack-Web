@@ -1,0 +1,58 @@
+
+body
+{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+}
+
+div
+{
+    text-align: center;
+    background-color: #eee;
+    padding:20px;
+    font-size: 20px;
+    border:1px solid rgb(81, 0, 128);
+}
+div p 
+{
+    border: inherit ;
+    padding: inherit;
+    max-height: 100px;
+    overflow: auto;
+
+}
+.img
+{
+    height: 200px;
+    width: 200px;
+    text-align: middle;
+
+}
+h3
+{
+    text-shadow: 2px 2px blueviolet ;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }

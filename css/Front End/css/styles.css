@@ -1,0 +1,24 @@
+.parent
+{
+    padding: 5px;
+    background-color:aqua;
+}
+.parent div , a
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    width: calc(94%/5);
+    float: left;
+    margin-left:1%;
+}
+.clear
+{
+    clear:both;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}

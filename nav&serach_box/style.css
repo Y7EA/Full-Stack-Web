@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    margin-top: 70px;
+    opacity: 0.7;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(0, 0 , 0, 0.4);
+    background-color: white;
+    
+}
+
+ul li {
+    display: inline;
+    padding: 16px 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+a:hover
+{
+    color:rgb(153, 0, 255);
+}
+
+.box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    padding: 12px;
+    width: 0;
+    transition: 0.7s;
+}
+
+.box:hover input
+{
+    width: 300px;
+}
+.fa-solid{
+    padding: 20px;
+}

@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20PX auto;
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    grid-template-rows: repeat(6 ,1fr);
+    gap:15px;   
+  }
+
+  .grid div 
+  {
+    color: white;
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .one {
+    grid-area: 6/1/6/4;
+  }
+  .five
+  {
+    grid-area: 3/2/6/4;
+  }
+
+  .eight
+  {
+    grid-area:1/1/1/4;
+  }
+
+  .two{
+    grid-area: 2/1/2/3 ;
+  }

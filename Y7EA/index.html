@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d640963a70.js" crossorigin="anonymous"></script>
+  <title>Yahya</title>
+</head>
+
+<body>
+  <div class="card" data-state="#about">
+    <div class="card-header">
+      <img class="card-avatar" src="Image/Yahya_My.jpg" alt="avatar" />
+      <h1 class="card-fullname">Yahya Haj Ali</h1>
+      <h2 class="card-jobtitle">Frontend developer</h2>
+    </div>
+    <div class="card-main">
+      <div class="card-section is-active" id="about">
+        <div class="card-content">
+          <div class="card-subtitle">ABOUT</div>
+          <p class="card-desc">I'm a Front-End Developer.really enjoy learning programming languages and frameworks, I
+            also enjoy Implementing designs. At This
+            Moment, I'm junior web developer and I love to learn new things every time.
+          </p>
+        </div>
+        <div class="card-social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="card-section" id="experience">
+        <div class="card-content">
+          <div class="card-subtitle">WORK EXPERIENCE</div>
+          <div class="card-timeline">
+            <div class="card-item" data-year="2019">
+              <div class="card-item-title">Front-end Developer at <span>Upwork</span></div>
+              <div class="card-item-desc">Disrupt stumptown retro everyday carry unicorn.</div>
+            </div>
+            <div class="card-item" data-year="2020">
+              <div class="card-item-title">UI Developer at <span>GitHub</span></div>
+              <div class="card-item-desc">Developed new conversion funnels and disrupt.</div>
+            </div>
+            <div class="card-item" data-year="2021">
+              <div class="card-item-title">Back-end at <span>Google</span></div>
+              <div class="card-item-desc">Developer Raya App.</div>
+            </div>
+            <div class="card-item" data-year="2022">
+              <div class="card-item-title">Full-Stack Developer at <span>CodePen</span></div>
+              <div class="card-item-desc">Responsible for the encomposing brand expreience.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-section" id="contact">
+        <div class="card-content">
+          <div class="card-subtitle">CONTACT</div>
+          <div class="card-contact-wrapper">
+            <div class="card-contact">
+              <i class="fa-solid fa-location-pin" style="padding-right: 10px;"></i>
+              <p>palestine</p>
+            </div>
+            <div class="card-contact">
+              <i class="fa-solid fa-phone" style="padding-right: 10px;"></i>
+              <p>0569141894</p>
+            </div>
+            <div class="card-contact">
+              <i class="fa-solid fa-at" style="padding-right: 10px;"></i>
+              <p>yahya.ali@students.alquds.edu</p>
+
+            </div>
+            <button class="contact-me">WORK TOGETHER</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-buttons">
+        <button data-section="#about" class="is-active">ABOUT</button>
+        <button data-section="#experience">EXPERIENCE</button>
+        <button data-section="#contact">CONTACT</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  const buttons = document.querySelectorAll(".card-buttons button");
+  const sections = document.querySelectorAll(".card-section");
+  const card = document.querySelector(".card");
+  const handleButtonClick = (e) => {
+    const targetSection = e.target.getAttribute("data-section");
+    const section = document.querySelector(targetSection);
+    targetSection !== "#about" ? card.classList.add("is-active") : card.classList.remove("is-active");
+    card.setAttribute("data-state", targetSection);
+    sections.forEach((s) => s.classList.remove("is-active"));
+    buttons.forEach((b) => b.classList.remove("is-active"));
+    e.target.classList.add("is-active");
+    section.classList.add("is-active");
+  };
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", handleButtonClick);
+  });
+</script>
+
+</html>

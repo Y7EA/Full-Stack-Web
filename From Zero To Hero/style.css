@@ -1,0 +1,101 @@
+:root
+{
+  --textColor:#1f3535;
+  --textColor2:#51caca;
+  --colorButton:#001a1a;
+  --backgrounColor:#fdfdfd;
+}
+.logo
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: #51caca;
+    font-weight: 600;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.logo:first-letter
+{
+    opacity: 0.6;
+    color: red;
+}
+div .logo 
+{
+    display: inline-block;
+    position: absolute;
+}
+ul
+{
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    justify-content: center;
+    background-color: var(--backgrounColor);
+}
+
+ul li {
+    padding: 12px 16px ;
+}
+ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+.sing {
+    color: white;
+    background-color: var(--colorButton);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--textColor);
+}
+a:hover
+{
+    color: var(--textColor2);
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    color: var(--textColor2);
+}
+.pd
+{
+    padding-top: 100px;
+
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+}
+p span
+{
+    color:#b5bdbd;
+}
+a.clik
+{
+    color: white;
+    background-color: var(--colorButton);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+div.cliked
+{
+    position: absolute;
+    left: calc((100%/2) - 100px);
+    padding-top: 10px;
+}
+
+div img
+{
+    position: absolute;
+    padding: 10px;
+    right: -320px;
+}

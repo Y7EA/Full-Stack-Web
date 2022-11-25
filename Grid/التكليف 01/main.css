@@ -1,0 +1,55 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto ; /* repeat(3 ,1fr) */
+    grid-template-rows: 50px auto;
+    gap: 10px;
+
+  }
+  .grid div 
+  {
+    display: flex;
+    background-color: #607d8b;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  .one::before
+  {
+    content: "Element 1";
+  }
+  .two::before
+  {
+    content: "Element 2";
+  }
+  .three::before
+  {
+    content: "Element 3";
+  }
+  .four::before
+  {
+    content: "Element 4";
+  }
+  .five::before
+  {
+    content: "Element 5";
+  }
+
+  .six::before
+  {
+    content: "Element 6";
+
+  }

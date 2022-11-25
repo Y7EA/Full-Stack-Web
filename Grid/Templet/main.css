@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+display: grid;
+height: 100vh;
+grid-template-columns: repeat(12,1fr);
+grid-template-rows: 50px auto 50px;
+grid-template-areas: "logo logo logo  nav nav nav nav nav nav nav nav nav" 
+"sid sid sid cont cont cont cont cont cont cont cont cont"
+"footer footer footer footer footer footer footer footer footer footer footer footer";
+
+}
+ul{
+    list-style: none;
+    float: right;
+}
+
+ul li {
+    display: inline;
+    padding: 14px 16px;
+    
+}
+h2{
+    grid-area:logo ;
+    background-color: #ffcecd;
+}
+nav
+{
+    grid-area: nav;
+    background-color: #ffcecd;
+
+}
+aside
+{
+    grid-area: sid;
+    background-color: #ffe69b;
+}
+section
+{
+    grid-area: cont;
+    background-color: #ffe69b;
+
+}
+footer{
+    grid-area: footer;
+    background-color: #b4eac8;
+}

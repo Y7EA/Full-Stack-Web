@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --background-color-Buttom:#f8f9fa;
+}
+
+body
+{
+    position: relative;
+    font-size: 14px;
+    font-family: Helvetica Neue,Noto Naskh Arabic UI,Arial,sans-serif;
+    color: #202124;
+}
+.imglogo
+{
+  width: 100px;
+  margin: 300px auto;
+}
+
+.butm
+{
+    position: absolute;
+    top: 125px;
+    left: calc(90% / 2);
+}
+
+
+input
+{
+    border: 1px solid #ddd;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+div .ind
+{
+    display: flex;
+    justify-content: center;
+}
+
+p
+{
+    display: flex;
+    justify-content: center;
+}
+

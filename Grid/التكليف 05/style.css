@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    /* /* grid-template-columns: auto auto;
+    row-gap: 313px;
+    column-gap: 10px;  */
+    /* ............................. */
+    /* يمكن حله عن طريق ال gap 
+    او عن طريق ال justify-content*/ 
+    grid-template-columns:repeat(2,350px);
+    justify-content: space-around;
+    align-content: space-between ;
+
+  }
+
+  .grid div 
+  {
+    display: flex;
+    background-color:#e91e63;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
